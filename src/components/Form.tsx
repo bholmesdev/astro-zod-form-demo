@@ -1,6 +1,6 @@
 import { useState } from "react";
-import type { z } from "zod";
 import { checkNewsletter } from "../pages/api/newsletter";
+import type { z } from "zod";
 import Error from "./Error";
 
 type Errors = z.typeToFlattenedError<z.infer<typeof checkNewsletter>>;
